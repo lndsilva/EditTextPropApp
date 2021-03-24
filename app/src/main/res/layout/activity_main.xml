@@ -19,9 +19,9 @@
         android:textSize="20sp" />
 
     <EditText
-        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:background="@drawable/borda_caixa_texto_email"
         android:drawableRight="@drawable/ic_baseline_mail"
         android:hint="Insira seu e-mail"
@@ -29,6 +29,54 @@
         android:padding="20dp"
         android:textSize="20sp" />
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtSenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="Insira sua senha"
+        app:endIconMode="password_toggle"
+        app:startIconContentDescription="Icone do cadeado"
+        app:startIconDrawable="@drawable/ic_baseline_lock">
 
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtTexto"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="Insira um texto"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        app:endIconMode="clear_text"
+        app:errorEnabled="true"
+        app:startIconContentDescription="Icone de limpar"
+        app:startIconDrawable="@drawable/ic_baseline_location_on">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnTexto"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Text Button" />
+
+    <Button
+        android:id="@+id/btnBotao"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Botão" />
 
 </LinearLayout>
